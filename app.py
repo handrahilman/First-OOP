@@ -30,3 +30,18 @@ class Hero:
     @classmethod
     def jumlah_hero(cls):
         return cls.jumlah
+
+class Strength(Hero):
+    def __init__(self,name,health,attack,defense,strength):
+        Hero.__init__(self,name,health,attack,defense)
+        self.strength = strength
+
+class Agility(Hero):
+    def __init__(self,name,health,attack,defense,agility):
+        Hero.__init__(self,name,health,attack,defense)
+        self.agility = agility
+
+class Intelligence(Hero):
+    def __init__(self,name,health,attack,defense,intelligence):
+        Hero.__init__(self,name,health,attack,defense)
+        self.intelligence = intelligence
