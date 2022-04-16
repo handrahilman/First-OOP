@@ -27,3 +27,6 @@ class Hero:
         else:
             pass
     
+    @classmethod
+    def jumlah_hero(cls):
+        return cls.jumlah
