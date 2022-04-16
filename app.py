@@ -8,7 +8,7 @@ class Hero:
         self.defense = defense
         Hero.jumlah += 1
 
-    def get_nama(self):
+    def get_name(self):
         print("name :{}".format(self.name))
     def get_health(self):
         print("health :{}".format(self.health))
@@ -18,7 +18,7 @@ class Hero:
         print("defense :{}".format(self.defense))
 
     def serang(self,lawan):
-        print(f"{self.nama} menyerang {lawan.nama}")
+        print(f"{self.name} menyerang {lawan.name}")
         lawan.health -= (self.attack - lawan.defense)
         print(f"serangan terasa {self.attack}")
         print(f"sisa nyawa : {lawan.health}")
