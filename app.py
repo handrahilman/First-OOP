@@ -45,3 +45,10 @@ class Intelligence(Hero):
     def __init__(self,name,health,attack,defense,intelligence):
         Hero.__init__(self,name,health,attack,defense)
         self.intelligence = intelligence
+
+rikimaru = Hero("Rikimaru",1000,500,10)
+mortred = Hero("mortred",1500,50,30)
+rikimaru.serang(mortred)
+
+balanar = Strength("Balanar",2000,200,50,25)
+balanar.serang(mortred)
